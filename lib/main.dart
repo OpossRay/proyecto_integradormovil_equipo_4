@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'screens/usuarios_page.dart';
-import 'screens/publicaciones_page.dart';
+import 'screens/notas_page.dart';
 import 'screens/productos_page.dart';
+import 'screens/publicaciones_page.dart';
+import 'screens/usuarios_page.dart';
 
 void main() => runApp(const App());
 
@@ -32,6 +33,7 @@ class _MenuPrincipalPageState extends State<MenuPrincipalPage> {
     const UsuariosPage(),
     const ProductosPage(),
     const PublicacionesPage(),
+    const NotasPage(),
   ];
 
   @override
@@ -60,9 +62,10 @@ class _MenuPrincipalPageState extends State<MenuPrincipalPage> {
             selectedIcon: Icon(Icons.people),
             label: 'Usuarios',
           ),
+
           NavigationDestination(
-            icon: Icon(Icons.article_outlined),
-            selectedIcon: Icon(Icons.article),
+            icon: Icon(Icons.shopping_bag_outlined),
+            selectedIcon: Icon(Icons.shopping_bag),
             label: 'Productos',
           ),
 
@@ -70,6 +73,12 @@ class _MenuPrincipalPageState extends State<MenuPrincipalPage> {
             icon: Icon(Icons.article_outlined),
             selectedIcon: Icon(Icons.article),
             label: 'Publicaciones',
+          ),
+
+          NavigationDestination(
+            icon: Icon(Icons.note_alt_outlined),
+            selectedIcon: Icon(Icons.note_alt),
+            label: 'Notas',
           ),
         ],
       ),

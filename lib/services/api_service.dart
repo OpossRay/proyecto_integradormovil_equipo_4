@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import '../models/usuario.dart';
-import '../models/publicacion.dart';
 import '../models/producto.dart';
+import '../models/publicacion.dart';
+import '../models/usuario.dart';
 
 class ApiService {
   static const String baseUrl = 'https://jsonplaceholder.typicode.com';
