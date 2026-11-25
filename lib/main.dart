@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'screens/notas_page.dart';
 import 'screens/productos_page.dart';
 import 'screens/publicaciones_page.dart';
+import 'screens/tareas_page.dart';
 import 'screens/usuarios_page.dart';
 
 void main() => runApp(const App());
@@ -29,11 +30,12 @@ class _MenuPrincipalPageState extends State<MenuPrincipalPage> {
 
   // Pantallas disponibles en la aplicación.
   late final List<Widget> _pantallas = [
-    RegistroPage(),
-    const UsuariosPage(),
-    const ProductosPage(),
-    const PublicacionesPage(),
+    const RegistroPage(),
+    //const UsuariosPage(),
+    //const ProductosPage(),
+    //const PublicacionesPage(),
     const NotasPage(),
+    const TareasPage(),
   ];
 
   @override
@@ -57,7 +59,7 @@ class _MenuPrincipalPageState extends State<MenuPrincipalPage> {
             label: 'Registro',
           ),
 
-          NavigationDestination(
+          /*   NavigationDestination(
             icon: Icon(Icons.people_outline),
             selectedIcon: Icon(Icons.people),
             label: 'Usuarios',
@@ -75,10 +77,16 @@ class _MenuPrincipalPageState extends State<MenuPrincipalPage> {
             label: 'Publicaciones',
           ),
 
+      */
           NavigationDestination(
             icon: Icon(Icons.note_alt_outlined),
             selectedIcon: Icon(Icons.note_alt),
             label: 'Notas',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.task_outlined),
+            selectedIcon: Icon(Icons.task),
+            label: 'Tareas',
           ),
         ],
       ),
