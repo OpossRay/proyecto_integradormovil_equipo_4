@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'screens/notas_page.dart';
-import 'screens/productos_page.dart';
-import 'screens/publicaciones_page.dart';
+//import 'screens/productos_page.dart';
+//import 'screens/publicaciones_page.dart';
 import 'screens/tareas_page.dart';
-import 'screens/usuarios_page.dart';
+
+//import 'screens/usuarios_page.dart';
 
 void main() => runApp(const App());
 

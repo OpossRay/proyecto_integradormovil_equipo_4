@@ -1,7 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:proyecto_integradormovil_equipo_4/services/preferencias_service.dart';
 
-import '../lib/services/preferencias_service.dart';
+//import '../lib/services/preferencias_service.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
